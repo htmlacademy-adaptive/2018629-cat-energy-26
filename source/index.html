@@ -9,7 +9,6 @@
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Магазин «CAT ENERGY».">
       </a>
-        <!-- нужен ли alt второй части логотипа, если они получаются одинаковыми?-->
       <a class="main-header__logo" href="index.html">
         <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин «CAT ENERGY».">
       </a>
@@ -101,12 +100,11 @@
           <img class="example__image example__image--after" src="img/after-mobile.png" width="243" height="232" alt="Стройный кот, которого кормили по программе питания Cat Energy Slim.">
           <div class="example__range-slider range-slider">
             <button class="range-slider__button range-slider__button--before" type="button">было</button>
-            <label class="visually-hidden" for="cat-width">Сравнить до и после.</label>
-            <!-- В мобильной версии это выглядит скорее как переключатель с двумя позициями,
-              а в планшетной и десктопной - явный ренж-слайдер.
-              Переключатель проще сделать через чекбокс, но тогда нужна разная верстка в разных версиях.
-              Не знаю, как правильно, поэтому пока тут тоже ренж-слайдер. -->
-            <input class="range-slider__range" type="range" id="cat-width">
+            <label class="range-slider__label">
+              <input class="range-slider__toggle" type="checkbox">
+              <span class="range-slider__toggle-control"></span>
+              <span class="visually-hidden">Сравнить до и после.</span>
+            </label>
             <button class="range-slider__button range-slider__button--after" type="button">стало</button>
           </div>
         </div>
@@ -123,7 +121,6 @@
           Санкт-Петербург</p>
       </div>
       <div class="main-footer__map">
-        <!--Не знаю, как вставить карту без всех управляющих элементов на ней, поэтому пока вставила так-->
         <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7f421c77fe1847a84a14f0b4f38890e747856b9a1731675a82be44341ee9cac&amp;source=constructor" width="800" height="400"></iframe>
       </div>
       <div class="main-footer__wrapper">
