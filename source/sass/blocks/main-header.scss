@@ -1,0 +1,33 @@
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  font-family: "Oswald", sans-serif;
+}
+
+.main-header__logo {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  display: block;
+  width: 34px;
+  height: 38px;
+}
+
+.main-header__logo-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}

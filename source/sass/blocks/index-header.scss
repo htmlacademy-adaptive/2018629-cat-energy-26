@@ -1,0 +1,52 @@
+.index-header {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85) 302px, 302px, #ffffff),
+    url("../../img/index-background-mobile.jpg") no-repeat,
+    linear-gradient(#444444 302px, 302px, #ffffff);
+  background-position: 50% 0;
+
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+}
+
+.index-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 27px;
+}
+
+.index-header__title {
+  margin: 0;
+  margin-bottom: 25px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+
+}
+
+.index-header__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.index-header__image {
+  margin: 0;
+  margin-bottom: 3px;
+  padding: 0;
+  display: block;
+}
+
+.index-header__button {
+  width: 280px;
+}

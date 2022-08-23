@@ -1,0 +1,85 @@
+.feature-card {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 30px;
+  padding-bottom: 0;
+  background-color: #f2f2f2;
+}
+
+.feature-card__title {
+  position: relative;
+  margin: 0;
+  margin-bottom: 29px;
+  padding: 0;
+  padding-left: 70px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  &--slim::before {
+    left: 2px;
+    width: 50px;
+    height: 53px;
+    background-image: url("../../img/index-card-slim.svg");
+    background-size: 50px 53px;
+  }
+
+  &--mass::before {
+    left: -7px;
+    width: 67px;
+    height: 50px;
+    background-image: url("../../img/index-card-mass.svg");
+    background-size: 67px 50px;
+  }
+}
+
+.feature-card__description {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 23px;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.feature-card__link {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  padding-top: 19px;
+  padding-bottom: 22px;
+
+  font-family: 'Oswald';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+
+  &::after {
+    content: url("../../img/icon_arrow.svg");
+    display: block;
+    width: 32px;
+    height: 12px;
+    margin: 0;
+    margin-left: 15px;
+  }
+}
