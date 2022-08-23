@@ -36,8 +36,9 @@
 .main-nav__wrapper {
   position: absolute;
   display: none;
-  width: 280px;
-  left: -300px;
+  width: 320px;
+  top: 32px;
+  right: 20px;
 
   &--open {
     display: block;

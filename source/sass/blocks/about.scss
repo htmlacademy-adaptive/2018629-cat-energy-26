@@ -1,0 +1,79 @@
+.about {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 49px;
+}
+
+.about__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.about__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: #000000;
+}
+
+.about__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 14px;
+  line-height: 18px;
+  color: #444444;
+}
+
+.about__item {
+  position: relative;
+  display: block;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  padding-left: 80px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    display: block;
+    box-sizing: border-box;
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    background-color: #68b738;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &--healthy::before {
+    background-image: url("../../img/icon-healthy.svg");
+    background-size: 26px 28px;
+  }
+
+  &--dissolve::before {
+    background-image: url("../../img/icon-dissolve.svg");
+    background-size: 30px 31px;
+  }
+
+  &--food::before {
+    background-image: url("../../img/icon-food.svg");
+    background-size: 26px 30px;
+  }
+
+  &--time::before {
+    background-image: url("../../img/icon-time.svg");
+    background-size: 33px 33px;
+  }
+}

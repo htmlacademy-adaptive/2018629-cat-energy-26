@@ -75,11 +75,19 @@
   color: #000000;
 
   &::after {
-    content: url("../../img/icon_arrow.svg");
+    content: url("../../img/icon-arrow.svg");
     display: block;
     width: 32px;
     height: 12px;
     margin: 0;
     margin-left: 15px;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.3;
   }
 }
