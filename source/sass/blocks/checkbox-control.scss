@@ -1,0 +1,37 @@
+.checkbox-control {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  padding-left: 45px;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.checkbox-control__mark {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #CDCDCD;
+  transform: translateY(-50%);
+
+  .checkbox-control__input:checked + &::before {
+    content: url("../../img/tick.svg");
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 26px;
+    height: 26px;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+}
