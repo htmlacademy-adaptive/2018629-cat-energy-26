@@ -17,7 +17,7 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   transform: translateY(-50%);
 
   .checkbox-control__input:checked + &::before {

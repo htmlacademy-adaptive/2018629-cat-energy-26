@@ -34,7 +34,7 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   border-radius: 0;
 
   -moz-appearance: textfield;
@@ -55,7 +55,7 @@
   }
 
   &:invalid {
-    border: 2px solid #FF8282
+    border: 2px solid #ff8282;
   }
 }
 
@@ -160,7 +160,7 @@
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 
-  border: 1px solid #E7E7E7;
+  border: 1px solid #e7e7e7;
   border-radius: 0;
 
   &::placeholder {
@@ -201,5 +201,4 @@
   margin: 0 auto;
   margin-bottom: 32px;
   text-align: center;
-
 }

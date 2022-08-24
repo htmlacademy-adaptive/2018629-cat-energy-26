@@ -1,70 +1,30 @@
-$base-green: #68b738;
-$base-green-2: #5eaa2f;
-$base-grey: #f2f2f2;
-$special-grey: #cdcdcd;
-$special-grey-2: #ebebeb;
-$special-grey-3: #666666;
-$special-dark-grey: #444444;
-$special-dark-grey-2: #222222;
-$status-error: #ff8282;
-
-
 @use "blocks/fonts.scss";
-
 @use "blocks/visually-hidden.scss";
-
 @use "blocks/page.scss";
-
 @use "blocks/main-header.scss";
-
 @use "blocks/main-container.scss";
-
 @use "blocks/main-nav.scss";
-
 @use "blocks/button.scss";
-
 @use "blocks/index-header.scss";
-
 @use "blocks/features.scss";
-
 @use "blocks/feature-card.scss";
-
 @use "blocks/about.scss";
-
 @use "blocks/example.scss";
-
 @use "blocks/stats.scss";
-
 @use "blocks/range-slider.scss";
-
 @use "blocks/main-footer.scss";
-
 @use "blocks/contacts.scss";
-
 @use "blocks/social.scss";
-
 @use "blocks/catalog-page.scss";
-
 @use "blocks/catalog-main.scss";
-
 @use "blocks/catalog-card.scss";
-
 @use "blocks/product-feature.scss";
-
 @use "blocks/show-all.scss";
-
 @use "blocks/catalog-additional.scss";
-
 @use "blocks/additional-card.scss";
-
 @use "blocks/form-page.scss";
-
 @use "blocks/form.scss";
-
 @use "blocks/radio-list.scss";
-
 @use "blocks/radio-control.scss";
-
 @use "blocks/checkbox-list.scss";
-
 @use "blocks/checkbox-control.scss";
