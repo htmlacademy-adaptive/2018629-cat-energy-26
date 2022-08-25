@@ -1,5 +1,7 @@
+@import "variables.scss";
+
 .stats {
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   text-align: center;
   text-transform: uppercase;
@@ -19,7 +21,7 @@
   flex-direction: column;
   align-items: center;
   width: 124px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $medium-grey;
   border-radius: 3px;
 }
 

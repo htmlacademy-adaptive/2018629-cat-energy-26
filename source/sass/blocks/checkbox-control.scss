@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .checkbox-control {
   position: relative;
   margin: 0;
@@ -17,11 +19,11 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $medium-grey;
   transform: translateY(-50%);
 
   .checkbox-control__input:checked + &::before {
-    content: url("../../img/tick.svg");
+    content: url("../img/tick.svg");
     position: absolute;
     top: 50%;
     left: 50%;

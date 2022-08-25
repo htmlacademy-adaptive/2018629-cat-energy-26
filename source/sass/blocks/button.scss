@@ -1,9 +1,11 @@
+@import "variables.scss";
+
 .button {
   display: block;
   box-sizing: border-box;
   padding: 10px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -12,29 +14,29 @@
   color: #ffffff;
   text-decoration: none;
 
-  background-color: #68b738;
+  background-color: $base-green;
   border: none;
 
   &:hover {
-    background-color: #5eaa2f;
+    background-color: $darker-green;
   }
 
   &:active {
-    background-color: #5eaa2f;
+    background-color: $darker-green;
     color: rgba(255, 255, 255, 0.3);
   }
 
   &--secondary {
-    background-color: #f2f2f2;
+    background-color: $base-grey;
     color: #444444;
   }
 
   &--secondary:hover {
-    background-color: #ebebeb;
+    background-color: $base-grey2;
   }
 
   &--secondary:active {
-    background-color: #ebebeb;
+    background-color: $base-grey2;
     color: rgba(68, 68, 68, 0.3);
   }
 }

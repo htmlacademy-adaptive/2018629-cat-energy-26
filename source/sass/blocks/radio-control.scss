@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .radio-control {
   position: relative;
   margin: 0;
@@ -17,7 +19,7 @@
   box-sizing: border-box;
   width: 30px;
   height: 30px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid $medium-grey;
   border-radius: 50%;
   transform: translateY(-50%);
 
@@ -30,7 +32,7 @@
     width: 13.5px;
     height: 13.5px;
     border-radius: 50%;
-    background-color: #68b738;
+    background-color: $base-green;
     transform: translateX(-50%) translateY(-50%);
   }
 

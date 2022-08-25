@@ -1,8 +1,10 @@
+@import "variables.scss";
+
 .main-nav {
   position: relative;
   display: block;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;

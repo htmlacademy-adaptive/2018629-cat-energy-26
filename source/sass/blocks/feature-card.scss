@@ -1,9 +1,11 @@
+@import "variables.scss";
+
 .feature-card {
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
   padding-bottom: 0;
-  background-color: #f2f2f2;
+  background-color: $base-grey;
 }
 
 .feature-card__title {
@@ -12,7 +14,7 @@
   margin-bottom: 29px;
   padding: 0;
   padding-left: 70px;
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 24px;
   line-height: 37px;
@@ -32,7 +34,7 @@
     left: 2px;
     width: 50px;
     height: 53px;
-    background-image: url("../../img/index-card-slim.svg");
+    background-image: url("../img/index-card-slim.svg");
     background-size: 50px 53px;
   }
 
@@ -40,7 +42,7 @@
     left: -7px;
     width: 67px;
     height: 50px;
-    background-image: url("../../img/index-card-mass.svg");
+    background-image: url("../img/index-card-mass.svg");
     background-size: 67px 50px;
   }
 }
@@ -53,9 +55,9 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $dark-grey;
 
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $light-grey;
 }
 
 .feature-card__link {
@@ -65,7 +67,7 @@
   padding-top: 19px;
   padding-bottom: 22px;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 16px;
   line-height: 16px;
@@ -75,7 +77,7 @@
   color: #000000;
 
   &::after {
-    content: url("../../img/icon-arrow.svg");
+    content: url("../img/icon-arrow.svg");
     display: block;
     width: 32px;
     height: 12px;

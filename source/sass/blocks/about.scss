@@ -1,3 +1,5 @@
+@import "variables.scss";
+
 .about {
   margin: 0;
   padding: 0;
@@ -14,7 +16,7 @@
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   font-weight: 400;
   font-size: 36px;
   line-height: 40px;
@@ -27,7 +29,7 @@
   list-style-type: none;
   font-size: 14px;
   line-height: 18px;
-  color: #444444;
+  color: $dark-grey;
 }
 
 .about__item {
@@ -52,28 +54,28 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
-    background-color: #68b738;
+    background-color: $base-green;
     background-repeat: no-repeat;
     background-position: center;
   }
 
   &--healthy::before {
-    background-image: url("../../img/icon-healthy.svg");
+    background-image: url("../img/icon-healthy.svg");
     background-size: 26px 28px;
   }
 
   &--dissolve::before {
-    background-image: url("../../img/icon-dissolve.svg");
+    background-image: url("../img/icon-dissolve.svg");
     background-size: 30px 31px;
   }
 
   &--food::before {
-    background-image: url("../../img/icon-food.svg");
+    background-image: url("../img/icon-food.svg");
     background-size: 26px 30px;
   }
 
   &--time::before {
-    background-image: url("../../img/icon-time.svg");
+    background-image: url("../img/icon-time.svg");
     background-size: 33px 33px;
   }
 }

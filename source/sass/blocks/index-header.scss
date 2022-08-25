@@ -1,3 +1,4 @@
+@import "variables.scss";
 .index-header {
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
     linear-gradient(#444444 302px, 302px, #ffffff);
   background-position: 50% 0;
 
-  font-family: "Oswald", sans-serif;
+  font-family: $Oswald;
   color: #ffffff;
 }
 

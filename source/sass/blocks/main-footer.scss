@@ -1,9 +1,11 @@
+@import "variables.scss";
+
 .main-footer {
   margin: 0;
   padding: 0;
 
   &--secondary {
-    background-color: #f2f2f2;
+    background-color: $base-grey;
   }
 }
 
@@ -31,7 +33,7 @@
 .main-footer__online-contacts {
   margin: 0;
   padding: 0;
-  background-color: #f2f2f2;
+  background-color: $base-grey;
 }
 
 .main-footer__wrapper {
@@ -44,7 +46,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 32px;
-  border-bottom: 1px solid #d9d9d9;
+  border-bottom: 1px solid $light-grey;
 
   &:hover {
     opacity: 0.8;
@@ -72,7 +74,7 @@
 
   &:hover .main-footer__developer-icon,
   &:active .main-footer__developer-icon {
-    color: #68b738;
+    color: $base-green;
   }
 
   &:active {
