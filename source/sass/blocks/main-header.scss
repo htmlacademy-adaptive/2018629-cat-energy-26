@@ -1,0 +1,37 @@
+@import "variables.scss";
+
+.main-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-family: $Oswald;
+}
+
+.main-header__logo {
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.main-header__logo-image {
+  display: block;
+  width: 34px;
+  height: 38px;
+}
+
+.main-header__logo-text {
+  display: block;
+  width: 101px;
+  height: 18px;
+}

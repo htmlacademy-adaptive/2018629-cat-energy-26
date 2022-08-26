@@ -1,0 +1,59 @@
+@import "variables.scss";
+
+.example {
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  background-color: #eaeaea;
+  overflow: hidden;
+}
+
+.example__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.example__title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+}
+
+.example__description {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey;
+}
+
+.example__stats {
+  display: block;
+  margin-bottom: 40px;
+}
+
+.example__image {
+  margin: 0 auto;
+  margin-bottom: 15px;
+  padding: 0;
+
+  &--before {
+    display: block;
+  }
+
+  &--after {
+    display: none;
+  }
+}
+
+.example__range-slider {
+  margin: 0;
+  padding: 0 35px;
+}

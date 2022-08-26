@@ -1,0 +1,83 @@
+@import "variables.scss";
+
+.catalog-additional {
+  position: relative;
+  margin: 0;
+  padding: 25px 0 35px 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 42px;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: $base-green;
+  }
+}
+
+.catalog-additional__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.catalog-additional__title {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 36px;
+  padding: 0 22px;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  background-color: #ffffff;
+  transform: translateX(-22px);
+}
+
+
+.catalog-additional__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.catalog-additional__item {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 13px 0 19px 0;
+  border-bottom: 1px solid $medium-grey;
+
+  &:first-child {
+    border-top: 1px solid $medium-grey;
+  }
+}
+
+.catalog-additional__gift {
+  margin: 0;
+  padding: 59px 0 43px 0;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+    url("../img/catalog-gift-background.jpg") no-repeat;
+}
+
+.catalog-additional__gift-text {
+  display: block;
+  width: 170px;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+
+  &::before {
+    content: url("../img/icon-gift.svg");
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding: 0;
+  }
+}

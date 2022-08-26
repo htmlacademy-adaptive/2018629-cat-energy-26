@@ -1,0 +1,18 @@
+.features {
+  margin: 0;
+  padding: 20px 0;
+}
+
+.features__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.features__card {
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,30 @@
+@import "variables.scss";
+
+.additional-card {
+  display: block;
+}
+
+.additional-card__wrapper {
+  display: block;
+}
+
+.additional-card__title {
+  margin: 0;
+  margin-bottom: 13px;
+  padding: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $very-dark-grey;
+}
+
+.additional-card__features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
+}

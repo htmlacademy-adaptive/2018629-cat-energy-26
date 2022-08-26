@@ -1,0 +1,29 @@
+@import "variables.scss";
+
+.contacts {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 26px 0;
+}
+
+.contacts__title {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: $Oswald;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #111111;
+}
+
+.contacts__text {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-grey;
+}
