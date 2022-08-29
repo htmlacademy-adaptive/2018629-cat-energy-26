@@ -1,6 +1,8 @@
 @import "variables.scss";
 
 .feature-card {
+  display: grid;
+  box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 30px;
@@ -26,8 +28,10 @@
     top: -5px;
 
     display: block;
+    top: 50%;
     background-position: center;
     background-repeat: no-repeat;
+    transform: translateY(-50%);
   }
 
   &--slim::before {
@@ -35,7 +39,7 @@
     width: 50px;
     height: 53px;
     background-image: url("../img/index-card-slim.svg");
-    background-size: 50px 53px;
+    background-size: contain;
   }
 
   &--mass::before {
@@ -43,7 +47,7 @@
     width: 67px;
     height: 50px;
     background-image: url("../img/index-card-mass.svg");
-    background-size: 67px 50px;
+    background-size: contain;
   }
 }
 
@@ -93,3 +97,102 @@
     opacity: 0.3;
   }
 }
+
+
+@media (min-width: $tablet-width) and (max-width: 1299px) {
+  .feature-card {
+    padding: 77px 30px 53px 52px;
+    grid-template-columns: 340px auto;
+    column-gap: 20px;
+
+    &::after {
+      content: "";
+      display: block;
+      align-self: center;
+      justify-self: center;
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    &--slim::after {
+      width: 200px;
+      height: 211px;
+      background-image: url("../img/index-card-slim.svg");
+    }
+
+    &--mass::after {
+      width: 268px;
+      height: 200px;
+      background-image: url("../img/index-card-mass.svg");
+    }
+  }
+
+  .feature-card__title {
+    padding: 0;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .feature-card__description {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #000000;
+  }
+
+  .feature-card__link {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feature-card {
+    grid-template-columns: auto;
+    padding: 77px 51px 32px 52px;
+  }
+
+  .feature-card__title {
+    align-self: center;
+    margin-bottom: 73px;
+    padding-left: 159px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &--slim::before {
+      left: 0;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--mass::before {
+      left: -19px;
+      width: 134px;
+      height: 100px;
+    }
+  }
+
+  .feature-card__description {
+    font-size: 16px;
+    line-height: 24px;
+    border: none;
+    color: #000000;
+  }
+
+  .feature-card__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+

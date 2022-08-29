@@ -3,11 +3,9 @@
 .image-slider {
   position: relative;
   display: block;
-  width: 280px;
+  width: $mobile-wrapper;
   height: 256px;
-  margin: 0;
   padding: 0;
-  overflow: hidden;
   text-align: center;
 }
 
@@ -74,5 +72,21 @@
   &:active::before {
     background-color: $base-green;
     opacity: 0.6;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .image-slider {
+    width: 560px;
+    height: 512px;
+  }
+
+  .image-slider__button {
+    left: 280px;
+
+    &::before {
+      top: -236px;
+      height: 512px;
+    }
   }
 }

@@ -45,6 +45,7 @@
   line-height: 12px;
   text-align: center;
   text-transform: none;
+  color: $dark-grey;
 
   background-color: #eaeaea;
 
@@ -57,4 +58,61 @@
   padding: 0;
   font-size: 14px;
   line-height: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .stats {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .stats__list {
+    margin-bottom: 0;
+  }
+
+  .stats__item {
+    width: 162px;
+    margin-right: 42px;
+  }
+
+  .stats__number {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .stats__description {
+    width: auto;
+    padding: 0 8px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: #ffffff;
+  }
+
+  .stats__price {
+    width: 175px;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .stats__description {
+    background-color: #f2f2f2;
+  }
+  .stats__list {
+    margin-bottom: 55px;
+  }
+
+  .stats__price {
+    width: 100%;
+    display: flex;
+  }
+
+  .stats__price-text {
+    margin-right: 63px;
+  }
+
 }
