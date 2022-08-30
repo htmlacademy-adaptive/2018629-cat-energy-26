@@ -1,16 +1,35 @@
 @import "variables.scss";
 
 .show-all {
+  position: relative;
   width: 280px;
+  padding-top: 78px;
+  padding-bottom: 25px;
   margin: 0 auto;
   text-align: center;
 
   &::before {
-    content: url("../img/plus.svg");
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 50%;
     display: block;
-    margin: 0 auto 23px auto;
     width: 30px;
-    height: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: translateX(-50%) rotate(90deg);
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 39px;
+    left: 50%;
+    display: block;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    transform: translateX(-50%);
   }
 }
 
@@ -35,4 +54,43 @@
   font-size: 12px;
   line-height: 16px;
   color: $dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .show-all {
+    box-sizing: border-box;
+    width: 100%;
+    margin-top: 81px;
+    padding: 161px 38px 36px 38px;
+    border: 2px solid #f2f2f2;
+
+    &::before {
+      top: 82px;
+      width: 60px;
+    }
+
+    &::after {
+      top: 82px;
+      width: 60px;
+    }
+  }
+
+  .show-all__title {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+
+  .show-all__text {
+    width: 170px;
+    margin: 0 auto 87px auto;
+    font-size: 16px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  .show-all__button {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }

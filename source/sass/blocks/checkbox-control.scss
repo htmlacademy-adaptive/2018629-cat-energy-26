@@ -23,17 +23,32 @@
   transform: translateY(-50%);
 
   .checkbox-control__input:checked + &::before {
-    content: url("../img/tick.svg");
+    content: "";
     position: absolute;
     top: 50%;
     left: 50%;
     display: block;
     width: 26px;
     height: 26px;
+    background-image: url("../img/tick.svg");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     transform: translateX(-50%) translateY(-50%);
   }
 
   &:hover {
     border: 1px solid #bababa;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .checkbox-control {
+    padding-left: 59px;
+  }
+
+  .checkbox-control__mark {
+    width: 40px;
+    height: 40px;
   }
 }

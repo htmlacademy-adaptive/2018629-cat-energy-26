@@ -104,7 +104,7 @@
 @media (min-width: $desktop-width) {
   .index-header {
     position: relative;
-    z-index: -1;
+    z-index: 0;
     margin-bottom: -59px;
     padding-top: 141px;
     padding-bottom: 54px;

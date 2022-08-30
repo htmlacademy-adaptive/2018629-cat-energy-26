@@ -37,14 +37,38 @@
   text-transform: uppercase;
 }
 
-.catalog-card__features {
-  font-family: "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 16px;
-  color: $dark-grey;
-}
-
 .catalog-card__button {
   grid-area: 2 / 1 / 3 / 3;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-card {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 200px auto auto;
+    gap: 33px;
+    margin: 0;
+    padding: 5px 38px 39px 38px;
+    box-sizing: border-box;
+    background: linear-gradient(rgba(0, 0, 0, 0) 81px, 81px, #f2f2f2);
+  }
+
+  .catalog-card__button {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .catalog-card__title {
+    width: 170px;
+    margin: 0 auto 14px auto;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .catalog-card__features-item {
+    border-bottom: 1px solid $medium-grey;
+  }
 }

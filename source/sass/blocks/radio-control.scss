@@ -40,3 +40,19 @@
     border: 1px solid #bababa;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .radio-control {
+    padding-left: 60px;
+  }
+
+  .radio-control__mark {
+    width: 40px;
+    height: 40px;
+
+    .radio-control__input:checked + &::before {
+      width: 18px;
+      height: 18px;
+    }
+  }
+}
