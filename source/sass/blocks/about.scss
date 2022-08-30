@@ -97,6 +97,7 @@
     row-gap: 37px;
     counter-reset: about-item;
   }
+
   .about__item {
     margin: 0;
     padding: 40px 0 57px 0;
@@ -113,7 +114,6 @@
     &--healthy::before {
       background-size: 30px 32px;
     }
-
 
     &::after {
       counter-increment: about-item;
@@ -135,6 +135,7 @@
   .about__wrapper {
     width: $desktop-wrapper;
   }
+
   .about__list {
     grid-template-columns: 250px 250px 250px 250px;
     column-gap: 73px;

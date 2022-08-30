@@ -106,8 +106,6 @@
   }
 }
 
-
-
 @media (min-width: $tablet-width) {
   .main-nav {
     width: 500px;
@@ -166,5 +164,4 @@
   .main-nav__item--index.main-nav__item--current::after {
     background-color: #ffffff;
   }
-
 }

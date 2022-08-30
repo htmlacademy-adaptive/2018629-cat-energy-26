@@ -240,6 +240,7 @@
     box-sizing: border-box;
     margin: 0 auto;
     padding: 0 37px 0 40px;
+
     &::before,
     &::after {
       display: none;
@@ -274,7 +275,7 @@
 
   .form__legend {
     padding: 0 40px;
-    margin-bottom:76px;
+    margin-bottom: 76px;
     font-size: 36px;
     line-height: 36px;
     transform: translateX(-40px);
@@ -304,6 +305,7 @@
     &::before {
       top: 32px;
     }
+
     .form__legend {
       margin-bottom: 57px;
     }
@@ -322,9 +324,7 @@
     font-size: 16px;
     line-height: 16px;
   }
-
 }
-
 
 @media (min-width: $desktop-width) {
   .form__subform {
@@ -388,5 +388,4 @@
     margin-right: 81px;
     line-height: 32px;
   }
-
 }
