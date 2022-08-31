@@ -22,11 +22,11 @@
   padding: 0;
   color: $dark-grey;
 
-  &:focus-within .form__icon--email path{
+  &:focus-within .form__icon--email path {
     stroke: $base-green;
   }
 
-  &:focus-within .form__icon--phone path{
+  &:focus-within .form__icon--phone path {
     fill: $base-green;
   }
 }
