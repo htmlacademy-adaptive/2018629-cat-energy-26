@@ -6,7 +6,7 @@
 }
 
 .catalog-page__title {
-  width: 280px;
+  width: $mobile-wrapper;
   margin: 0 auto;
   padding: 27px 0 41px 0;
 
@@ -15,4 +15,22 @@
   font-size: 36px;
   line-height: 36px;
   color: #000000;
+}
+
+@media (min-width: $tablet-width) {
+  .catalog-page__wrapper {
+    border: none;
+  }
+
+  .catalog-page__title {
+    width: $tablet-wrapper;
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-page__title {
+    width: $desktop-wrapper;
+  }
 }

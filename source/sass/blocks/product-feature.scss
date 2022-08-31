@@ -1,9 +1,15 @@
+@import "variables.scss";
+
 .product-feature {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
   padding-bottom: 2px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
 }
 
 .product-feature__title {
@@ -14,4 +20,13 @@
 .product-feature__value {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .product-feature {
+    padding-top: 7px;
+    padding-bottom: 9px;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

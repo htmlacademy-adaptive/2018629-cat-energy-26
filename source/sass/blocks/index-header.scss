@@ -15,7 +15,8 @@
 }
 
 .index-header__wrapper {
-  width: 280px;
+  display: grid;
+  width: $mobile-wrapper;
   margin: 0 auto;
   padding-top: 27px;
 }
@@ -49,5 +50,106 @@
 }
 
 .index-header__button {
-  width: 280px;
+  width: $mobile-wrapper;
+}
+
+@media (min-width: $tablet-width) {
+  .index-header {
+    background: none;
+    color: #000000;
+  }
+
+  .index-header__wrapper {
+    width: $tablet-wrapper;
+    grid-template-columns: 87px 420px auto;
+    row-gap: 40px;
+  }
+
+  .index-header__title {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    text-align: left;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 0;
+  }
+
+  .index-header__slogan {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 9px;
+  }
+
+  .index-header__image {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    width: 709px;
+    height: 609px;
+    transform: translateY(-29px);
+  }
+
+  .index-header__button {
+    position: relative;
+    z-index: 2;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 244px;
+    height: 54px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .index-header {
+    position: relative;
+    z-index: 0;
+    margin-bottom: -59px;
+    padding-top: 141px;
+    padding-bottom: 54px;
+    background: linear-gradient(to right, #ffffff 50%, 50%, rgba(104, 183, 56, 0.85)),
+      url("../../img/index-background-desktop.jpg") 100% no-repeat,
+      linear-gradient(to right, rgba(0, 0, 0, 0) 50%, 50%, #444444);
+    background-size: contain;
+    transform: translateY(-141px);
+  }
+
+  .index-header__wrapper {
+    width: $desktop-wrapper;
+    padding: 0 80px;
+    grid-template-columns: 420px auto;
+    row-gap: 40px;
+  }
+
+  .index-header__title {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .index-header__slogan {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    margin-bottom: 9px;
+  }
+
+  .index-header__image {
+    grid-column: 2 / 3;
+    grid-row: 1 / 6;
+    width: 552px;
+    height: 499px;
+    transform: translateY(0);
+  }
+
+  .index-header__button {
+    position: relative;
+    z-index: 2;
+    grid-column: 1 / 2;
+    grid-row: 4 / 5;
+    width: 244px;
+    height: 54px;
+  }
 }

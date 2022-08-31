@@ -18,7 +18,7 @@
 }
 
 .catalog-additional__wrapper {
-  width: 280px;
+  width: $mobile-wrapper;
   margin: 0 auto;
 }
 
@@ -45,7 +45,6 @@
 .catalog-additional__item {
   box-sizing: border-box;
   margin: 0;
-  padding: 13px 0 19px 0;
   border-bottom: 1px solid $medium-grey;
 
   &:first-child {
@@ -54,11 +53,23 @@
 }
 
 .catalog-additional__gift {
+  box-sizing: border-box;
   margin: 0;
+  margin-top: 35px;
   padding: 59px 0 43px 0;
   background:
     linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
     url("../img/catalog-gift-background.jpg") no-repeat;
+
+  &::before {
+    content: url("../img/icon-gift.svg");
+    display: block;
+    width: 78px;
+    height: 80px;
+    margin: 0 auto;
+    margin-bottom: 48px;
+    padding: 0;
+  }
 }
 
 .catalog-additional__gift-text {
@@ -70,14 +81,90 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+}
 
-  &::before {
-    content: url("../img/icon-gift.svg");
-    display: block;
-    width: 78px;
-    height: 80px;
-    margin: 0 auto;
-    margin-bottom: 48px;
+
+@media (min-width: $tablet-width) {
+  .catalog-additional {
+    padding-top: 68px;
+    padding-bottom: 76px;
+
+    &::before {
+      top: 93px;
+    }
+  }
+
+  .catalog-additional__wrapper {
+    width: $tablet-wrapper;
+  }
+
+  .catalog-additional__title {
+    padding: 0 36px;
+    font-size: 36px;
+    line-height: 36px;
+    transform: translateX(0);
+  }
+
+  .catalog-additional__gift {
+    width: $tablet-wrapper;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 57px 77px 60px 77px;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+      url("../img/catalog-gift-background-tablet.jpg") no-repeat;
+
+    &::before {
+      margin: 0;
+      width: 80px;
+      height: 82px;
+    }
+  }
+
+  .catalog-additional__gift-text {
+    text-align: left;
+    margin: 0;
     padding: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-additional__wrapper {
+    width: $desktop-wrapper;
+  }
+
+  .catalog-additional__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .catalog-additional__list {
+    flex-grow: 1;
+    margin-right: 79px;
+  }
+
+  .catalog-additional__gift {
+    display: block;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+    padding: 56px 40px 42px 40px;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
+      url("../img/catalog-gift-background-desktop.jpg") no-repeat;
+
+
+    &::before {
+      margin: 0 auto 46px auto;
+    }
+  }
+
+  .catalog-additional__gift-text {
+    width: 162px;
+    text-align: center;
   }
 }

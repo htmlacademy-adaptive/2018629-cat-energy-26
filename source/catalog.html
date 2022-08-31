@@ -2,27 +2,30 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial scale=1">
     <link rel="stylesheet" href="css/style.css">
     <title>Каталог «CAT ENERGY»</title>
   </head>
   <body class="page__body">
     <header class="main-header page__header">
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Магазин «CAT ENERGY».">
-      </a>
-      <a class="main-header__logo" href="index.html">
-        <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин «CAT ENERGY».">
-      </a>
+      <div class="main-header__logo-wrapper">
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Магазин «CAT ENERGY».">
+        </a>
+        <a class="main-header__logo" href="index.html">
+          <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин «CAT ENERGY».">
+        </a>
+      </div>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle main-nav__toggle--hidden" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
-            <li class="main-nav__item main-nav__item--current">
+            <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">главная</a>
             </li>
-            <li class="main-nav__item">
+            <li class="main-nav__item main-nav__item--current">
               <a class="main-nav__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="main-nav__item">
@@ -49,7 +52,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy PRO 500&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -77,7 +80,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy PRO 1000&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -105,7 +108,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy PRO 500 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy PRO 500&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -133,7 +136,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy PRO 1000 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy PRO 1000&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -161,7 +164,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy slim 500&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -189,7 +192,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy slim 1000 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy slim 1000&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -217,7 +220,7 @@
                 </a>
                 <div class="catalog-card__description">
                   <a class="catalog-card__link" href="#">
-                    <h3 class="catalog-card__title">Cat Energy slim 500 г</h3>
+                    <h3 class="catalog-card__title">Cat Energy slim 500&nbsp;г</h3>
                   </a>
                   <dl class="catalog-card__features">
                     <div class="catalog-card__features-item product-feature">
@@ -237,86 +240,88 @@
                 <a class="catalog-card__button button" href="#">заказать</a>
               </div>
             </li>
+            <li class="catalog-main__show-all">
+              <div class="show-all">
+                <b class="show-all__title">Показать еще 100500&nbsp;товаров</b>
+                <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
+                <a class="show-all__button button button--secondary" href="#">показать все</a>
+              </div>
+            </li>
           </ul>
-
-          <div class="catalog-main__show-all">
-            <div class="show-all">
-              <b class="show-all__title">Показать еще 100500 товаров</b>
-              <p class="show-all__text">На самом деле вкусов гораздо больше!</p>
-              <a class="show-all__button button button--secondary" href="#">показать все</a>
-            </div>
-          </div>
         </div>
       </section>
 
       <section class="catalog-additional">
         <div class="catalog-additional__wrapper">
           <h2 class="catalog-additional__title">Дополнительные товары</h2>
-          <ul class="catalog-additional__list">
-            <li class="catalog-additional__item additional-card">
-              <div class="additional-card__wrapper">
-                <h3 class="additional-card__title">Сахарозаменитель</h3>
-                <dl class="additional-card__features">
-                  <dt class="additional-card__features-title">1 упаковка (100 г)</dt>
-                  <dd class="additional-card__features-value">200 Р.</dd>
-                </dl>
-              </div>
-              <a class="additional-card__button button" href="#">заказать</a>
-            </li>
+          <div class="catalog-additional__container">
+            <ul class="catalog-additional__list">
+              <li class="catalog-additional__item additional-card">
+                <div class="additional-card__wrapper">
+                  <h3 class="additional-card__title">Сахарозаменитель</h3>
+                  <dl class="additional-card__features">
+                    <dt class="additional-card__features-title">1 упаковка (100 г)</dt>
+                    <dd class="additional-card__features-value">200 Р.</dd>
+                  </dl>
+                </div>
+                <a class="additional-card__button button" href="#">заказать</a>
+              </li>
 
-            <li class="catalog-additional__item additional-card">
-              <div class="additional-card__wrapper">
-                <h3 class="additional-card__title">питьевая вода</h3>
-                <dl class="additional-card__features">
-                  <dt class="additional-card__features-title">5 литров</dt>
-                  <dd class="additional-card__features-value">50 Р.</dd>
-                </dl>
-              </div>
-              <a class="additional-card__button button" href="#">заказать</a>
-            </li>
+              <li class="catalog-additional__item additional-card">
+                <div class="additional-card__wrapper">
+                  <h3 class="additional-card__title">питьевая вода</h3>
+                  <dl class="additional-card__features">
+                    <dt class="additional-card__features-title">5 литров</dt>
+                    <dd class="additional-card__features-value">50 Р.</dd>
+                  </dl>
+                </div>
+                <a class="additional-card__button button" href="#">заказать</a>
+              </li>
 
-            <li class="catalog-additional__item additional-card">
-              <div class="additional-card__wrapper">
-                <h3 class="additional-card__title">молоко</h3>
-                <dl class="additional-card__features">
-                  <dt class="additional-card__features-title">1 литр</dt>
-                  <dd class="additional-card__features-value">100 Р.</dd>
-                </dl>
-              </div>
-              <a class="additional-card__button button" href="#">заказать</a>
-            </li>
+              <li class="catalog-additional__item additional-card">
+                <div class="additional-card__wrapper">
+                  <h3 class="additional-card__title">молоко</h3>
+                  <dl class="additional-card__features">
+                    <dt class="additional-card__features-title">1 литр</dt>
+                    <dd class="additional-card__features-value">100 Р.</dd>
+                  </dl>
+                </div>
+                <a class="additional-card__button button" href="#">заказать</a>
+              </li>
 
-            <li class="catalog-additional__item additional-card">
-              <div class="additional-card__wrapper">
-                <h3 class="additional-card__title">витамины</h3>
-                <dl class="additional-card__features">
-                  <dt class="additional-card__features-title">1 упаковка (30 г)</dt>
-                  <dd class="additional-card__features-value">300 Р.</dd>
-                </dl>
-              </div>
-              <a class="additional-card__button button" href="#">заказать</a>
-            </li>
-          </ul>
+              <li class="catalog-additional__item additional-card">
+                <div class="additional-card__wrapper">
+                  <h3 class="additional-card__title">витамины</h3>
+                  <dl class="additional-card__features">
+                    <dt class="additional-card__features-title">1 упаковка (30 г)</dt>
+                    <dd class="additional-card__features-value">300 Р.</dd>
+                  </dl>
+                </div>
+                <a class="additional-card__button button" href="#">заказать</a>
+              </li>
+            </ul>
 
-          <div class="catalog-additional__gift">
-            <p class="catalog-additional__gift-text">Закажите все <br>
-              и получите чехол для
-              кота в подарок!</p>
+            <div class="catalog-additional__gift">
+              <p class="catalog-additional__gift-text">Закажите все <br>
+                и получите чехол для
+                кота в подарок!</p>
+            </div>
           </div>
-
         </div>
       </section>
 
     </main>
 
     <footer class="main-footer main-footer--secondary">
-      <section class="main-footer__contacts contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
-        <p class="contacts__text">ул. Большая
-          Конюшенная, д. 19/8
-          Санкт-Петербург</p>
-      </section>
+      <div class="main-footer__container">
+        <section class="main-footer__contacts contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+          <p class="contacts__text">ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург</p>
+        </section>
+      </div>
       <div class="main-footer__map">
         <iframe class="main-footer__map-import" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7f421c77fe1847a84a14f0b4f38890e747856b9a1731675a82be44341ee9cac&amp;source=constructor"></iframe>
       </div>

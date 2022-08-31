@@ -42,3 +42,9 @@
 .social__icon {
   display: block;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    border: none;
+  }
+}

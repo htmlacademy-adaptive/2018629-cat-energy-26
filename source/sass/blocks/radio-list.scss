@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .radio-list {
+  box-sizing: border-box;
   padding: 0;
   list-style-type: none;
 }
@@ -12,4 +13,21 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $very-dark-grey;
+}
+
+@media (min-width: $tablet-width) {
+  .radio-list {
+    border: 1px solid #e7e7e7;
+    padding: 25px 25px 25px 27px;
+  }
+
+  .radio-list__item {
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }

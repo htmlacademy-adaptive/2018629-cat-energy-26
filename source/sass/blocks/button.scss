@@ -1,7 +1,9 @@
 @import "variables.scss";
 
 .button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   box-sizing: border-box;
   padding: 10px;
 
@@ -38,5 +40,12 @@
   &--secondary:active {
     background-color: $base-grey2;
     color: rgba(68, 68, 68, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
