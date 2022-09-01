@@ -116,6 +116,7 @@
   }
 
   .index-header__wrapper {
+    box-sizing: border-box;
     width: $desktop-wrapper;
     padding: 0 80px;
     grid-template-columns: 420px auto;
