@@ -16,8 +16,8 @@
           <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин «CAT ENERGY».">
         </a>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle main-nav__toggle--hidden" type="button">
+      <nav class="main-nav main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
@@ -316,14 +316,15 @@
       <div class="main-footer__container">
         <section class="main-footer__contacts contacts">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <b class="contacts__title">приглашаем к сотрудничеству дилеров!</b>
+          <b class="contacts__title">приглашаем к&nbsp;сотрудничеству дилеров!</b>
           <p class="contacts__text">ул. Большая
             Конюшенная, д. 19/8
-            Санкт-Петербург</p>
+            <span class="contacts__text-city">Санкт-Петербург</span></p>
         </section>
       </div>
+
       <div class="main-footer__map">
-        <iframe class="main-footer__map-import" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad7f421c77fe1847a84a14f0b4f38890e747856b9a1731675a82be44341ee9cac&amp;source=constructor"></iframe>
+        <iframe class="main-footer__map-import" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad737e515c2fbe161a4947e8da95e1f996d9fc7ad53aa4853035952bdc5359dd2&amp;source=constructor"></iframe>
       </div>
       <section class="main-footer__online-contacts">
         <div class="main-footer__wrapper">
@@ -369,6 +370,6 @@
         </div>
       </section>
     </footer>
-
+    <script src="js/nav-toggle.js"></script>
   </body>
 </html>
