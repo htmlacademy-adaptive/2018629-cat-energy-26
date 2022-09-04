@@ -13,12 +13,12 @@
 .main-header__logo-wrapper {
   display: flex;
   align-items: center;
+  margin-bottom: 16px;
 }
 
 .main-header__logo {
   display: block;
   margin: 0;
-  margin-bottom: 16px;
   padding: 0;
   text-decoration: none;
 
@@ -52,6 +52,15 @@
     justify-content: space-between;
   }
 
+  .main-header__logo-wrapper {
+    margin: 0;
+  }
+
+  .main-header__logo-image {
+    width: 174px;
+    height: 52px;
+  }
+
   .main-header__logo-text {
     display: none;
   }
@@ -64,6 +73,11 @@
     flex-direction: row;
     justify-content: space-between;
     padding-top: 53px;
+  }
+
+  .main-header__logo-image {
+    width: 202px;
+    height: 59px;
   }
 
   .main-header__logo-text {
