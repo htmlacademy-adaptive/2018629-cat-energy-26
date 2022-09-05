@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/apple.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="css/style.css">
     <title>Подбор программы</title>
   </head>
@@ -10,7 +14,23 @@
     <header class="main-header page__header">
       <div class="main-header__logo-wrapper">
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-image" src="img/logo-mobile.svg" width="34" height="38" alt="Магазин «CAT ENERGY».">
+          <picture>
+            <source
+              media="(min-width: 1300px)"
+              srcset="img/logo-desktop.svg"
+              >
+            <source
+              media="(min-width: 768px)"
+              srcset="img/logo-tablet.svg"
+              >
+            <img
+              class="main-header__logo-image"
+              src="img/logo-mobile.svg"
+              width="34"
+              height="38"
+              alt="Магазин «CAT ENERGY»."
+              >
+          </picture>
         </a>
         <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин «CAT ENERGY».">
@@ -179,6 +199,7 @@
         <iframe class="main-footer__map-import" src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad737e515c2fbe161a4947e8da95e1f996d9fc7ad53aa4853035952bdc5359dd2&amp;source=constructor"></iframe>
       </div>
       <section class="main-footer__online-contacts">
+        <h2 class="visually-hidden">Мы в соцсетях.</h2>
         <div class="main-footer__wrapper">
           <a class="main-footer__link" href="index.html">
             <img class="main-footer__logo" src="img/logo-mobile-text.svg" width="128" height="24" alt="Магазин «CAT ENERGY».">

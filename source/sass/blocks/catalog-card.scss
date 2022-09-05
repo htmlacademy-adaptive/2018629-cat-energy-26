@@ -71,4 +71,16 @@
   .catalog-card__features-item {
     border-bottom: 1px solid $medium-grey;
   }
+
+  .catalog-card__image {
+    &--small {
+      width: 161px;
+      height: 172px;
+    }
+
+    &--big {
+      width: 168px;
+      height: 200px;
+    }
+  }
 }
