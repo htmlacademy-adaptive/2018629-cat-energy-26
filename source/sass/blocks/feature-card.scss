@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .feature-card {
+  position: relative;
   display: grid;
   box-sizing: border-box;
   padding-left: 20px;
@@ -11,7 +12,6 @@
 }
 
 .feature-card__title {
-  position: relative;
   margin: 0;
   margin-bottom: 29px;
   padding: 0;
@@ -21,31 +21,23 @@
   font-size: 24px;
   line-height: 37px;
   text-transform: uppercase;
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    top: 50%;
-    background-position: center;
-    background-repeat: no-repeat;
-    transform: translateY(-50%);
-  }
+.feature-card__icon {
+  position: absolute;
 
-  &--slim::before {
-    left: 2px;
+  &--slim {
     width: 50px;
     height: 53px;
-    background-image: url("../img/index-card-slim.svg");
-    background-size: contain;
+    left: 22px;
+    top: 21px;
   }
 
-  &--mass::before {
-    left: -7px;
+  &--mass {
     width: 67px;
     height: 50px;
-    background-image: url("../img/index-card-mass.svg");
-    background-size: contain;
+    left: 13px;
+    top: 24px;
   }
 }
 
@@ -64,6 +56,7 @@
 
 .feature-card__link {
   display: flex;
+  align-items: center;
   margin: 0;
   padding: 0;
   padding-top: 19px;
@@ -78,15 +71,6 @@
   text-decoration: none;
   color: #000000;
 
-  &::after {
-    content: url("../img/icon-arrow.svg");
-    display: block;
-    width: 32px;
-    height: 12px;
-    margin: 0;
-    margin-left: 15px;
-  }
-
   &:hover {
     opacity: 0.8;
   }
@@ -96,35 +80,33 @@
   }
 }
 
+.feature-card__arrow {
+  margin-left: 17px;
+}
+
 
 @media (min-width: $tablet-width) and (max-width: 1299px) {
   .feature-card {
     padding: 77px 30px 53px 52px;
     grid-template-columns: 340px auto;
     column-gap: 20px;
+  }
 
-    &::after {
-      content: "";
-      display: block;
-      align-self: center;
-      justify-self: center;
-      grid-column: 2 / 3;
-      grid-row: 1 / 4;
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
-    }
+  .feature-card__icon {
+    position: static;
+    align-self: center;
+    justify-self: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
 
-    &--slim::after {
+    &--slim {
       width: 200px;
       height: 211px;
-      background-image: url("../img/index-card-slim.svg");
     }
 
-    &--mass::after {
+    &--mass {
       width: 268px;
       height: 200px;
-      background-image: url("../img/index-card-mass.svg");
     }
   }
 
@@ -152,6 +134,10 @@
     grid-row: 3 / 4;
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .feature-card__arrow {
+    margin-left: 25px;
   }
 }
 
@@ -181,6 +167,22 @@
     }
   }
 
+  .feature-card__icon {
+    &--slim {
+      left: 52px;
+      top: 41px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &--mass {
+      left: 33px;
+      top: 47px;
+      width: 134px;
+      height: 100px;
+    }
+  }
+
   .feature-card__description {
     font-size: 16px;
     line-height: 24px;
@@ -191,5 +193,9 @@
   .feature-card__link {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .feature-card__arrow {
+    margin-left: 28px;
   }
 }
