@@ -3,12 +3,12 @@
 .catalog-additional {
   position: relative;
   margin: 0;
-  padding: 25px 0 35px 0;
+  padding: 24px 0 35px 0;
 
   &::before {
     content: "";
     position: absolute;
-    top: 42px;
+    top: 38px;
     z-index: -1;
     display: block;
     width: 100%;
@@ -25,7 +25,7 @@
 .catalog-additional__title {
   display: inline-block;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 34px;
   padding: 0 22px;
   font-family: $Oswald;
   font-weight: 400;
@@ -52,6 +52,9 @@
 }
 
 .catalog-additional__gift {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   box-sizing: border-box;
   margin: 0;
   margin-top: 35px;
@@ -67,22 +70,16 @@
       linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
       url("../img/catalog/catalog-gift-background-mobile@2x.jpg");
   }
+}
 
-  &::before {
-    content: url("../img/icon-gift.svg");
-    display: block;
-    width: 78px;
-    height: 80px;
-    margin: 0 auto;
-    margin-bottom: 48px;
-    padding: 0;
-  }
+.catalog-additional__gift-icon {
+  margin-bottom: 48px;
 }
 
 .catalog-additional__gift-text {
   display: block;
   width: 170px;
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   text-align: center;
   font-size: 16px;
@@ -97,8 +94,21 @@
     padding-bottom: 76px;
 
     &::before {
-      top: 93px;
+      top: 89px;
     }
+  }
+
+  .catalog-additional__container {
+    padding-top: 45px;
+  }
+
+  .catalog-additional__list {
+    margin-bottom: 70px;
+  }
+
+  .catalog-additional__item {
+    padding: 0 38px;
+    border: 1px solid $medium-grey;
   }
 
   .catalog-additional__wrapper {
@@ -114,10 +124,11 @@
 
   .catalog-additional__gift {
     width: $tablet-wrapper;
-    display: flex;
+    margin: 0;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 57px 77px 60px 77px;
+    padding: 57px 117px 60px 77px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
       url("../img/catalog/catalog-gift-background-tablet.jpg");
@@ -126,12 +137,6 @@
       background-image:
         linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
         url("../img/catalog/catalog-gift-background-tablet@2x.jpg");
-    }
-
-    &::before {
-      margin: 0;
-      width: 80px;
-      height: 82px;
     }
   }
 
@@ -142,30 +147,57 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  .catalog-additional__gift-icon {
+    width: 80px;
+    height: 82px;
+    margin: 0;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-additional {
+    padding-top: 76px;
+    padding-bottom: 87px;
+
+    &::before {
+      top: 99px;
+    }
+  }
+
   .catalog-additional__wrapper {
     width: $desktop-wrapper;
+  }
+
+  .catalog-additional__title {
+    padding: 0 40px 0 40px;
+    transform: translateX(-40px);
   }
 
   .catalog-additional__container {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
   }
 
   .catalog-additional__list {
     flex-grow: 1;
     margin-right: 79px;
+    margin-bottom: 0;
+  }
+
+  .catalog-additional__item {
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid $medium-grey;
   }
 
   .catalog-additional__gift {
-    display: block;
+    flex-direction: column;
     box-sizing: border-box;
     width: auto;
     margin: 0;
-    padding: 56px 40px 42px 40px;
+    padding: 56px 40px 43px 43px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
       url("../img/catalog/catalog-gift-background-desktop.jpg");
@@ -175,14 +207,14 @@
         linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
         url("../img/catalog/catalog-gift-background-desktop@2x.jpg");
     }
-
-    &::before {
-      margin: 0 auto 46px auto;
-    }
   }
 
   .catalog-additional__gift-text {
     width: 162px;
     text-align: center;
+  }
+
+  .catalog-additional__gift-icon {
+    margin-bottom: 47px;
   }
 }

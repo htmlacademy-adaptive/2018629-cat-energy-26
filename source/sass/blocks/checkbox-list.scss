@@ -34,5 +34,6 @@
 @media (min-width: $desktop-width) {
   .checkbox-list {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 77px;
   }
 }

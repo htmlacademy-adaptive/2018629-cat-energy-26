@@ -3,7 +3,7 @@
 .about {
   margin: 0;
   padding: 0;
-  padding-bottom: 49px;
+  padding-bottom: 48px;
 }
 
 .about__wrapper {
@@ -35,50 +35,30 @@
 
 .about__item {
   position: relative;
-  display: block;
+  display: flex;
   align-items: center;
   margin: 0;
   margin-bottom: 20px;
   padding: 0;
-  padding-left: 80px;
 
   &:last-child {
     margin-bottom: 0;
   }
+}
 
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    display: block;
-    box-sizing: border-box;
-    width: 60px;
-    height: 60px;
-    margin-right: 20px;
-    background-color: $base-green;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
+.about__item-picture {
+  display: flex;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: $base-green;
+  flex-shrink: 0;
+}
 
-  &--healthy::before {
-    background-image: url("../img/icon-healthy.svg");
-    background-size: 26px 28px;
-  }
-
-  &--dissolve::before {
-    background-image: url("../img/icon-dissolve.svg");
-    background-size: 30px 31px;
-  }
-
-  &--food::before {
-    background-image: url("../img/icon-food.svg");
-    background-size: 26px 30px;
-  }
-
-  &--time::before {
-    background-image: url("../img/icon-time.svg");
-    background-size: 33px 33px;
-  }
+.about__item-icon {
+  align-self: center;
+  display: block;
+  margin: 0 auto;
 }
 
 @media (min-width: $tablet-width) {
@@ -93,41 +73,39 @@
 
   .about__list {
     grid-template-columns: 250px 250px;
-    column-gap: 136px;
-    row-gap: 37px;
+    column-gap: 134px;
+    row-gap: 46px;
     counter-reset: about-item;
   }
 
   .about__item {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: baseline;
     margin: 0;
-    padding: 40px 0 57px 0;
+    padding: 31px 0 57px 0;
     font-size: 16px;
     line-height: 24px;
-
-    &::before {
-      position: relative;
-      width: 80px;
-      height: 80px;
-      margin-bottom: 31px;
-    }
-
-    &--healthy::before {
-      background-size: 30px 32px;
-    }
 
     &::after {
       counter-increment: about-item;
       content: counter(about-item);
       position: absolute;
       z-index: -1;
-      top: 0;
-      left: 114px;
+      top: -7px;
+      left: 115px;
       font-family: $Oswald;
       text-align: center;
       font-size: 280px;
       line-height: 280px;
       color: $base-grey;
     }
+  }
+
+  .about__item-picture {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 31px;
   }
 }
 
@@ -138,6 +116,6 @@
 
   .about__list {
     grid-template-columns: 250px 250px 250px 250px;
-    column-gap: 73px;
+    column-gap: 75px;
   }
 }
