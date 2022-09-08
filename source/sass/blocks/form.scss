@@ -315,6 +315,11 @@
 
   .form__legend {
     width: auto;
+    padding: 0 40px;
+    margin-bottom: 76px;
+    font-size: 36px;
+    line-height: 36px;
+    transform: translateX(-40px);
   }
 
   .form__owner {
@@ -360,14 +365,6 @@
     }
   }
 
-  .form__legend {
-    padding: 0 40px;
-    margin-bottom: 76px;
-    font-size: 36px;
-    line-height: 36px;
-    transform: translateX(-40px);
-  }
-
   .form__comment {
     margin-bottom: 55px;
 
@@ -389,7 +386,6 @@
   }
 
   .form__additional {
-
     &::before {
       top: 31px;
     }

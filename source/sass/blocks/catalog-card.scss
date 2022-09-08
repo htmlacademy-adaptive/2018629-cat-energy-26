@@ -36,13 +36,12 @@
   &--small {
     width: 68px;
     height: 78px;
-    height: auto;
     transform: translateY(17px) translateX(5px);
   }
 
-// это жуткий костыль из-за того, что первая картинка отличается по размеру от остальных
+  // это жуткий костыль из-за того, что первая картинка отличается по размеру от остальных
 
-&--first {
+  &--first {
     width: 68px;
     height: 86px;
     transform: translateY(10px) translateX(5px);
