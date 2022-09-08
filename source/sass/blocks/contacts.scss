@@ -37,7 +37,7 @@
 @media (min-width: $tablet-width) {
   .contacts {
     width: $tablet-wrapper;
-    padding: 60px 40px 56px 40px;
+    padding: 58px 40px 59px 40px;
   }
 
   .contacts__title {
@@ -47,6 +47,7 @@
   }
 
   .contacts__text {
+    padding-top: 0;
     width: 160px;
     text-align: right;
     font-size: 16px;
@@ -63,7 +64,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     width: 565px;
-    padding: 56px 80px;
+    padding: 59px 78px;
     background-color: #ffffff;
   }
 

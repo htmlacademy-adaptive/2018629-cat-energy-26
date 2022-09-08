@@ -40,7 +40,8 @@
   .additional-card__wrapper {
     display: flex;
     justify-content: space-between;
-    padding: 25px 0;
+    align-items: center;
+    padding: 25px 0 22px 0;
   }
 
   .additional-card__title {
@@ -50,9 +51,20 @@
   }
 
   .additional-card__features {
+    align-items: flex-start;
     padding: 0;
+    padding-top: 2px;
     font-size: 16px;
     line-height: 20px;
+  }
+
+  .additional-card__features-title {
+    margin-right: 10px;
+  }
+
+  .additional-card__features-value {
+    min-width: 44px;
+    text-align: right;
   }
 
   .additional-card__button {
@@ -66,7 +78,7 @@
     justify-content: space-between;
     align-items: center;
     padding-top: 15px;
-    padding-bottom: 17px;
+    padding-bottom: 16px;
   }
 
   .additional-card__wrapper {
@@ -76,7 +88,7 @@
   }
 
   .additional-card__button {
-    width: 244px;
+    width: 348px;
     margin: 0;
     font-size: 16px;
     line-height: 20px;
@@ -84,5 +96,10 @@
 
   .additional-card__features {
     width: 288px;
+    padding-top: 5px;
+  }
+
+  .additional-card__features-value {
+    text-align: left;
   }
 }

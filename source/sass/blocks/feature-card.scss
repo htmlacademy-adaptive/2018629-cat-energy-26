@@ -87,7 +87,7 @@
 
 @media (min-width: $tablet-width) and (max-width: 1299px) {
   .feature-card {
-    padding: 77px 30px 53px 52px;
+    padding: 77px 30px 35px 52px;
     grid-template-columns: 340px auto;
     column-gap: 20px;
   }
@@ -101,16 +101,19 @@
 
     &--slim {
       width: 200px;
-      height: 211px;
+      height: 210px;
+      transform: translateY(-23px);
     }
 
     &--mass {
       width: 268px;
       height: 200px;
+      transform: translateY(-19px);
     }
   }
 
   .feature-card__title {
+    margin-bottom: 24px;
     padding: 0;
     font-size: 36px;
     line-height: 36px;
@@ -121,6 +124,7 @@
   }
 
   .feature-card__description {
+    margin-bottom: 10px;
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     font-size: 16px;
@@ -153,18 +157,6 @@
     padding-left: 159px;
     font-size: 36px;
     line-height: 36px;
-
-    &--slim::before {
-      left: 0;
-      width: 100px;
-      height: 100px;
-    }
-
-    &--mass::before {
-      left: -19px;
-      width: 134px;
-      height: 100px;
-    }
   }
 
   .feature-card__icon {
@@ -172,7 +164,7 @@
       left: 52px;
       top: 41px;
       width: 100px;
-      height: 100px;
+      height: 106px;
     }
 
     &--mass {
@@ -184,6 +176,8 @@
   }
 
   .feature-card__description {
+    margin-bottom: 0;
+    padding: 0;
     font-size: 16px;
     line-height: 24px;
     border: none;
@@ -191,6 +185,7 @@
   }
 
   .feature-card__link {
+    padding: 27px 0;
     font-size: 20px;
     line-height: 30px;
   }

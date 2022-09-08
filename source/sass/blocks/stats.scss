@@ -75,8 +75,8 @@
   }
 
   .stats__item {
-    width: 162px;
-    margin-right: 42px;
+    width: 161px;
+    margin-right: 41px;
   }
 
   .stats__number {
@@ -86,10 +86,12 @@
 
   .stats__description {
     width: auto;
+    margin: 0;
     padding: 0 8px;
     font-size: 14px;
     line-height: 14px;
     background-color: #ffffff;
+    transform: translateY(9px);
   }
 
   .stats__price {
@@ -106,7 +108,7 @@
   }
 
   .stats__list {
-    margin-bottom: 55px;
+    margin-bottom: 58px;
   }
 
   .stats__price {
@@ -115,6 +117,6 @@
   }
 
   .stats__price-text {
-    margin-right: 63px;
+    margin-right: 65px;
   }
 }

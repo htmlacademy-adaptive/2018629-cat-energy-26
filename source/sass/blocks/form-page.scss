@@ -36,6 +36,8 @@
 
 @media (min-width: $tablet-width) {
   .form-page {
+    padding-top: 22px;
+
     &::before {
       display: none;
     }
@@ -61,6 +63,7 @@
 @media (min-width: $desktop-width) {
   .form-page__title {
     width: $desktop-wrapper;
+    margin-top: 42px;
     margin-bottom: 56px;
     padding: 0;
   }

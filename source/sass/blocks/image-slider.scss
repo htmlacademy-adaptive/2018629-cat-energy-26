@@ -83,9 +83,11 @@
 
   .image-slider__button {
     left: 280px;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%) translateY(5px);
 
     &::before {
-      top: -236px;
+      top: -237px;
       height: 512px;
     }
   }

@@ -85,7 +85,7 @@
 @media (min-width: $desktop-width) {
   .example {
     background: linear-gradient(#ffffff 156px, 156px, #f2f2f2);
-    padding-top: 20px;
+    padding-top: 22px;
     padding-bottom: 75px;
   }
 
@@ -99,6 +99,10 @@
 
   .example__text {
     width: 440px;
+  }
+
+  .example__description {
+    margin-bottom: 70px;
   }
 
   .example__title {

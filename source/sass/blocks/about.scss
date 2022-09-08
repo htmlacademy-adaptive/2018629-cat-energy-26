@@ -3,7 +3,7 @@
 .about {
   margin: 0;
   padding: 0;
-  padding-bottom: 49px;
+  padding-bottom: 48px;
 }
 
 .about__wrapper {
@@ -73,8 +73,8 @@
 
   .about__list {
     grid-template-columns: 250px 250px;
-    column-gap: 136px;
-    row-gap: 37px;
+    column-gap: 134px;
+    row-gap: 46px;
     counter-reset: about-item;
   }
 
@@ -83,7 +83,7 @@
     align-items: flex-start;
     justify-content: baseline;
     margin: 0;
-    padding: 40px 0 57px 0;
+    padding: 31px 0 57px 0;
     font-size: 16px;
     line-height: 24px;
 
@@ -92,8 +92,8 @@
       content: counter(about-item);
       position: absolute;
       z-index: -1;
-      top: 0;
-      left: 114px;
+      top: -7px;
+      left: 115px;
       font-family: $Oswald;
       text-align: center;
       font-size: 280px;
@@ -116,6 +116,6 @@
 
   .about__list {
     grid-template-columns: 250px 250px 250px 250px;
-    column-gap: 73px;
+    column-gap: 75px;
   }
 }

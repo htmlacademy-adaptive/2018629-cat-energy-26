@@ -42,7 +42,8 @@
   .catalog-main__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 50px;
   }
 
   .catalog-main__item {
@@ -70,6 +71,6 @@
   .catalog-main__list {
     grid-template-columns: 245px 245px 245px 245px;
     column-gap: 80px;
-    row-gap: 63px;
+    row-gap: 53px;
   }
 }

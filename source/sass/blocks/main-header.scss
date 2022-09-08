@@ -57,6 +57,11 @@
     margin: 0;
   }
 
+  .main-header__logo {
+    margin: 0;
+    padding: 10px 0;
+  }
+
   .main-header__logo-image {
     width: 174px;
     height: 52px;
@@ -73,7 +78,11 @@
     width: $desktop-wrapper;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 53px;
+    padding-top: 37px;
+  }
+
+  .main-header__logo {
+    padding-bottom: 5px;
   }
 
   .main-header__logo-image {
