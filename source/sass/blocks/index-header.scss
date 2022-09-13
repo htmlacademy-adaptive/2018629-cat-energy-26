@@ -27,7 +27,7 @@
   display: grid;
   width: $mobile-wrapper;
   margin: 0 auto;
-  margin-bottom: -32px;
+  margin-bottom: 0;
   padding-top: 27px;
 }
 
@@ -70,6 +70,7 @@
   }
 
   .index-header__wrapper {
+    margin-bottom: -32px;
     width: $tablet-wrapper;
     grid-template-columns: 87px 420px auto;
     row-gap: 40px;

@@ -151,8 +151,8 @@
     height: 14px;
   }
 
-  .form__input:invalid:not(:placeholder-shown) + &--email path {
-    stroke: $error-color;
+  .form__input:invalid:not(:placeholder-shown) + &--email {
+    color: $error-color;
   }
 
   &--phone {
@@ -160,8 +160,8 @@
     height: 20px;
   }
 
-  .form__input:invalid:not(:placeholder-shown) + &--phone path {
-    fill: $error-color;
+  .form__input:invalid:not(:placeholder-shown) + &--phone {
+    color: $error-color;
   }
 }
 
