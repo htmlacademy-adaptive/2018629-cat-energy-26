@@ -6,14 +6,14 @@
   flex-direction: column;
   box-sizing: border-box;
   width: $mobile-wrapper;
-  padding-top: 12px;
+  padding-top: 11px;
   font-family: $Oswald;
 }
 
 .main-header__logo-wrapper {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 6px;
 }
 
 .main-header__logo {
@@ -42,7 +42,7 @@
   width: 101px;
   height: 18px;
   margin-left: 56px;
-  padding: 10px 0;
+  // padding: 10px 0;
 }
 
 

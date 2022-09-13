@@ -7,7 +7,7 @@
     <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple.png">
     <link rel="manifest" href="manifest.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Подбор программы</title>
   </head>
   <body class="page__body">
@@ -31,9 +31,19 @@
               alt="Магазин «CAT ENERGY»."
               >
           </picture>
+
         </a>
         <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-text" src="img/logo-mobile-text.svg" width="101" height="18" alt="Магазин «CAT ENERGY».">
+          <svg
+            class="main-header__logo-text"
+            width="101"
+            height="18"
+            role="img"
+            aria-label="Магазин «CAT ENERGY»."
+            >
+            <use href="img/sprite.svg#logo-text"></use>
+          </svg>
+
         </a>
       </div>
       <nav class="main-nav main-nav--nojs">
