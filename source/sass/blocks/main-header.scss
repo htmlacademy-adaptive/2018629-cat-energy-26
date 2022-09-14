@@ -29,6 +29,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
 }
 
 .main-header__logo-image {
@@ -42,7 +46,7 @@
   width: 101px;
   height: 18px;
   margin-left: 56px;
-  // padding: 10px 0;
+  padding: 11px 0 7px 0;
 }
 
 
@@ -51,6 +55,7 @@
     width: $tablet-wrapper;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
   }
 
   .main-header__logo-wrapper {
@@ -65,6 +70,7 @@
   .main-header__logo-image {
     width: 174px;
     height: 52px;
+    padding-top: 2px;
   }
 
   .main-header__logo-text {
@@ -78,16 +84,18 @@
     width: $desktop-wrapper;
     flex-direction: row;
     justify-content: space-between;
+    align-items: flex-start;
     padding-top: 37px;
   }
 
   .main-header__logo {
-    padding-bottom: 5px;
+    padding-top: 15px;
   }
 
   .main-header__logo-image {
     width: 202px;
     height: 59px;
+    padding-top: 0;
   }
 
   .main-header__logo-text {

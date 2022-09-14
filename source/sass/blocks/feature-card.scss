@@ -78,6 +78,10 @@
   &:active {
     opacity: 0.3;
   }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
 }
 
 .feature-card__arrow {
@@ -100,15 +104,15 @@
     grid-row: 1 / 4;
 
     &--slim {
-      width: 200px;
-      height: 210px;
-      transform: translateY(-23px);
+      width: 202px;
+      height: 213px;
+      transform: translateY(-20px);
     }
 
     &--mass {
       width: 268px;
       height: 200px;
-      transform: translateY(-19px);
+      transform: translateY(-17px);
     }
   }
 
@@ -154,7 +158,7 @@
   .feature-card__title {
     align-self: center;
     margin-bottom: 73px;
-    padding-left: 159px;
+    padding-left: 161px;
     font-size: 36px;
     line-height: 36px;
   }

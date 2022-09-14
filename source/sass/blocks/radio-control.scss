@@ -2,6 +2,7 @@
 
 .radio-control {
   position: relative;
+  display: block;
   margin: 0;
   padding: 0;
   padding-left: 45px;
@@ -9,6 +10,10 @@
   &:active {
     opacity: 0.3;
   }
+}
+
+.radio-control__label {
+  display: inline-block;
 }
 
 .radio-control__mark {
@@ -38,6 +43,10 @@
 
   &:hover {
     border: 1px solid #bababa;
+  }
+
+  .radio-control__input:focus + & {
+    border: 1px solid $dark-grey;
   }
 }
 

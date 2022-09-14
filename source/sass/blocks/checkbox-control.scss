@@ -1,6 +1,7 @@
 @import "variables.scss";
 
 .checkbox-control {
+  display: block;
   position: relative;
   margin: 0;
   padding: 0;
@@ -40,6 +41,14 @@
   &:hover {
     border: 1px solid #bababa;
   }
+
+  .checkbox-control__input:focus + & {
+    border: 1px solid $dark-grey;
+  }
+}
+
+.checkbox-control__label {
+  display: inline-block;
 }
 
 @media (min-width: $tablet-width) {

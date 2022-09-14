@@ -47,6 +47,10 @@
   &:active {
     opacity: 0.6;
   }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
 }
 
 .main-nav__wrapper {
@@ -187,6 +191,7 @@
 
   .main-nav__list {
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
   }
 
@@ -216,6 +221,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: 610px;
+    max-width: 610px;
     font-weight: 400;
     font-size: 20px;
     line-height: 30px;
