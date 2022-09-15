@@ -6,6 +6,7 @@
 
 .social__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 0;
@@ -36,6 +37,10 @@
   &:active {
     color: $base-green;
     opacity: 0.3;
+  }
+
+  &:focus {
+    outline: 2px solid $dark-grey;
   }
 }
 

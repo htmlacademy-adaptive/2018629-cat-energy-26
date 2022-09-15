@@ -90,7 +90,7 @@
 
 @media (min-width: $tablet-width) {
   .catalog-additional {
-    padding-top: 68px;
+    padding-top: 69px;
     padding-bottom: 76px;
 
     &::before {
@@ -128,7 +128,7 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 57px 117px 60px 77px;
+    padding: 60px 117px 58px 79px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
       url("../img/catalog/catalog-gift-background-tablet.jpg");
@@ -158,7 +158,7 @@
 @media (min-width: $desktop-width) {
   .catalog-additional {
     padding-top: 76px;
-    padding-bottom: 87px;
+    padding-bottom: 82px;
 
     &::before {
       top: 99px;
@@ -197,7 +197,7 @@
     box-sizing: border-box;
     width: auto;
     margin: 0;
-    padding: 56px 40px 43px 43px;
+    padding: 59px 40px 43px 43px;
     background-image:
       linear-gradient(rgba(104, 183, 56, 0.85) 10px, rgba(104, 183, 56, 0.85)),
       url("../img/catalog/catalog-gift-background-desktop.jpg");
