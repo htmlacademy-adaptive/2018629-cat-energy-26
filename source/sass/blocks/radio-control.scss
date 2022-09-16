@@ -45,7 +45,7 @@
     border: 1px solid #bababa;
   }
 
-  .radio-control__input:focus + & {
+  .radio-control__input:focus:not(:active) + & {
     border: 1px solid $dark-grey;
   }
 }

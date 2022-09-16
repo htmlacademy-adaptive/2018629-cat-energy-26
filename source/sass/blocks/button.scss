@@ -23,13 +23,14 @@
     background-color: $darker-green;
   }
 
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
+
   &:active {
     background-color: $darker-green;
     color: rgba(255, 255, 255, 0.3);
-  }
-
-  &:focus {
-    outline: 2px solid $dark-grey;
+    outline: none;
   }
 
   &--secondary {
