@@ -42,7 +42,7 @@
     border: 1px solid #bababa;
   }
 
-  .checkbox-control__input:focus + & {
+  .checkbox-control__input:focus:not(:active) + & {
     border: 1px solid $dark-grey;
   }
 }

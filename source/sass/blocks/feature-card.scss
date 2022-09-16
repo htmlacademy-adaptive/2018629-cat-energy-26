@@ -71,16 +71,38 @@
   text-decoration: none;
   color: #000000;
 
-  &:hover {
-    opacity: 0.8;
+  &::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 12px;
+    margin-left: 17px;
+    background-image: url("../img/icon-arrow.svg");
+    background-position: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: width 0.3s ease;
   }
 
-  &:active {
-    opacity: 0.3;
+  &:hover {
+    opacity: 0.8;
+
+    &::after {
+      width: 32px;
+    }
   }
 
   &:focus {
     outline: 2px solid $dark-grey;
+  }
+
+  &:active {
+    opacity: 0.3;
+    outline: none;
+
+    &::after {
+      width: 32px;
+    }
   }
 }
 

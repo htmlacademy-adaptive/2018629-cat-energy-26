@@ -34,13 +34,14 @@
     color: $base-green;
   }
 
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
+
   &:active {
     color: $base-green;
     opacity: 0.3;
-  }
-
-  &:focus {
-    outline: 2px solid $dark-grey;
+    outline: none;
   }
 }
 

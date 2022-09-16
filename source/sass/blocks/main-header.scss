@@ -26,12 +26,13 @@
     opacity: 0.8;
   }
 
-  &:active {
-    opacity: 0.6;
-  }
-
   &:focus {
     outline: 2px solid $dark-grey;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
   }
 }
 
@@ -65,6 +66,10 @@
   .main-header__logo {
     margin: 0;
     padding: 10px 0;
+  }
+
+  .main-header__logo:last-child {
+    display: none;
   }
 
   .main-header__logo-image {

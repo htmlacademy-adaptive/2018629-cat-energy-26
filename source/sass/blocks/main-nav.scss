@@ -44,12 +44,13 @@
     opacity: 0.8;
   }
 
-  &:active {
-    opacity: 0.6;
-  }
-
   &:focus {
     outline: 2px solid $dark-grey;
+  }
+
+  &:active {
+    opacity: 0.6;
+    outline: none;
   }
 }
 
@@ -169,8 +170,13 @@
     opacity: 0.6;
   }
 
+  &:focus {
+    outline: 2px solid $dark-grey;
+  }
+
   &:active {
     opacity: 0.3;
+    outline: none;
   }
 }
 
